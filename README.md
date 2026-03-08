@@ -107,6 +107,12 @@ VidyaMitra suggests **certifications, courses, and learning paths** for a smooth
 
 ---
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 # ⚙️ Installation Guide
 
 ## 1️⃣ Clone Repository
@@ -115,8 +121,5 @@ VidyaMitra suggests **certifications, courses, and learning paths** for a smooth
 git clone https://github.com/your-username/VidyaMitra.git
 cd VidyaMitra
 
----
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
