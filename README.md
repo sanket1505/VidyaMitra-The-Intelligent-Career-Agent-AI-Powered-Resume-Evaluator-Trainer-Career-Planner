@@ -1,0 +1,2 @@
+# VidyaMitra-The-Intelligent-Career-Agent-AI-Powered-Resume-Evaluator-Trainer-Career-Planner
+VidyaMitra is an AI-powered web platform that enhances digital learning by providing personalized educational support for students and educators. It uses a React.js frontend and a FastAPI Python backend for efficient data processing, authentication, and AI features, offering a scalable and user-friendly solution for modern education.
