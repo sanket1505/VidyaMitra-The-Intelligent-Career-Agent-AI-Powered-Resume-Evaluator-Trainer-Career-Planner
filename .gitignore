@@ -1,0 +1,36 @@
+﻿# Root
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.db-journal
+.venv/
+venv/
+env/
+
+# Backend
+backend/.env
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+backend/server*.log
+backend/*.log
+backend/*.db
+
+# Node
+node_modules/
+Frontend/node_modules/
+Frontend/dist/
+
+# Build caches
+*.tsbuildinfo

@@ -1,0 +1,12 @@
+from fastapi import APIRouter
+
+router = APIRouter(
+    prefix="/progress",
+    tags=["Progress Tracking"],
+)
+
+
+@router.get("/me")
+async def get_progress():
+    # TODO: implement progress tracking logic
+    return {"message": "Progress tracking endpoint placeholder"}

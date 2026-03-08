@@ -1,0 +1,39 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.routers import (
+    resume_parsing,
+    skill_evaluation,
+    training_plan,
+    quiz_interview,
+    progress_tracking,
+    job_recommendations,
+)
+
+app = FastAPI(
+    title="VidyāMitra API",
+    version="1.0",
+)
+
+# Allow all origins (loose; tighten for production)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/")
+def root():
+    return {"message": "VidyāMitra API Running"}
+
+
+# Modular routers
+app.include_router(resume_parsing.router)
+app.include_router(skill_evaluation.router)
+app.include_router(training_plan.router)
+app.include_router(quiz_interview.router)
+app.include_router(progress_tracking.router)
+app.include_router(job_recommendations.router)
