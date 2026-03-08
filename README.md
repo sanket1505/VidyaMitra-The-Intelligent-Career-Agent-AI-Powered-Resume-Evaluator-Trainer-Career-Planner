@@ -65,6 +65,7 @@ The platform uses a **full-stack architecture** with:
 # 🏗️ Technical Architecture
 
 
+## 🏗 Technical Architecture
 
 ```mermaid
 flowchart TD
@@ -86,7 +87,7 @@ F --> J
 G --> J
 H --> J
 I --> J
-
+```
 ---
 
 # 📚 Use Case Scenarios
