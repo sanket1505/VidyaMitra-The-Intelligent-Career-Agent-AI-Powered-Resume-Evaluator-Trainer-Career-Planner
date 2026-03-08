@@ -63,41 +63,21 @@ The platform uses a **full-stack architecture** with:
 ---
 
 # 🏗️ Technical Architecture
+
 ```mermaid
-flowchart TB
+flowchart TD
 
-subgraph Frontend
-A[React Frontend]
-end
+A[React Frontend] --> B[AI Agents]
 
-subgraph AI Layer
-B[AI Agents]
-end
+B --> C[Resume Builder]
+B --> D[Resume Analyzer]
+B --> E[Eligibility Check]
+B --> F[Learning Planner]
+B --> G[Quiz System]
+B --> H[Interview Module]
+B --> I[Progress Tracker]
 
-subgraph Modules
-C[Resume Builder]
-D[Resume Analyzer]
-E[Eligibility Check]
-F[Learning Planner]
-G[Quiz System]
-H[Interview Module]
-I[Progress Tracker]
-end
-
-subgraph Backend
-J[Python FastAPI Backend]
-end
-
-A --> B
-B --> C
-B --> D
-B --> E
-B --> F
-B --> G
-B --> H
-B --> I
-
-C --> J
+C --> J[Python FastAPI Backend]
 D --> J
 E --> J
 F --> J
