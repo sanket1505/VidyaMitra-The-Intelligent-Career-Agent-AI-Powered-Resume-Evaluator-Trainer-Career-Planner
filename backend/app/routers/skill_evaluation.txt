@@ -1,0 +1,12 @@
+from fastapi import APIRouter
+
+router = APIRouter(
+    prefix="/skills",
+    tags=["Skill Evaluation"],
+)
+
+
+@router.post("/evaluate")
+async def evaluate_skills():
+    # TODO: implement skill evaluation logic
+    return {"message": "Skill evaluation endpoint placeholder"}

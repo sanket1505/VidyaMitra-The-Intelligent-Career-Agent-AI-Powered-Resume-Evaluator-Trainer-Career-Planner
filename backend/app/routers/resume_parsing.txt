@@ -1,0 +1,12 @@
+from fastapi import APIRouter
+
+router = APIRouter(
+    prefix="/resume",
+    tags=["Resume Parsing"],
+)
+
+
+@router.post("/parse")
+async def parse_resume():
+    # TODO: implement resume parsing logic
+    return {"message": "Resume parsing endpoint placeholder"}

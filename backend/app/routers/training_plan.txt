@@ -1,0 +1,12 @@
+from fastapi import APIRouter
+
+router = APIRouter(
+    prefix="/training",
+    tags=["Training Plan"],
+)
+
+
+@router.post("/plan")
+async def generate_training_plan():
+    # TODO: implement training plan generation logic
+    return {"message": "Training plan endpoint placeholder"}

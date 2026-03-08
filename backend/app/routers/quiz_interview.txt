@@ -1,0 +1,12 @@
+from fastapi import APIRouter
+
+router = APIRouter(
+    prefix="/quiz",
+    tags=["Quiz & Interview"],
+)
+
+
+@router.post("/simulate")
+async def simulate_quiz_or_interview():
+    # TODO: implement quiz & interview simulation logic
+    return {"message": "Quiz & interview simulation endpoint placeholder"}
